@@ -1,0 +1,468 @@
+{
+	"info": {
+		"_postman_id": "97fae011-dab0-43fa-a78f-88ec570cd3e9",
+		"name": "capstone-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get movies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUVkJSVFEwT0RKRU1VRTRSRU5CTlVNNE1UUkRRemN4TlRORk16TXhORU5FTVRjek5UQTJOdyJ9.eyJpc3MiOiJodHRwczovL29ueWlueWUtZXppa2UuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlMTIzODc0OTMxYzQ0MGVhYWZhMWQ1ZiIsImF1ZCI6InZpZGVvIiwiaWF0IjoxNTc4MzE1NjkyLCJleHAiOjE1Nzg0MDIwOTIsImF6cCI6IlBTM1F1MnZjcUVIeDV5a2Q0UWZweTFKWEZnMjNOSU5KIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.oVWJGJQkZ9s6gJKVeWjGupulHTLl4SZ2hXtOfc2jq21rHrDZDpKkERlHT8zdUcbigTRvJoWnskfuJrvxXKbnWdrkHT0dTjQ8Ru4fBt_ip1m7Dqh7JTxXx0Vxp8B_tH5GOLa_wkSrukFg6w0iXHJhg_jjYcqQjE2MsDaNOlj_Q2Q9DJsLUyp5mBEAOvz05g7DtoUui0wmvrzmsc4JLLPHqrtyifXnINoRTH5LMot9RaruUfCPQHz_xXQECw4XXeqgmTUXbBtnL5_giHxzMKLNQOX3mRsVUbAgHeIH_vouOA1enbN3-Yxinf62hhmU89X0W4akg5WlFMpqHcXhTW3NWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Regina Daniels\",\n\"age\": \"19\",\n\"gender\": \"female\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/movies",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single movie",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUVkJSVFEwT0RKRU1VRTRSRU5CTlVNNE1UUkRRemN4TlRORk16TXhORU5FTVRjek5UQTJOdyJ9.eyJpc3MiOiJodHRwczovL29ueWlueWUtZXppa2UuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlMTIzODc0OTMxYzQ0MGVhYWZhMWQ1ZiIsImF1ZCI6InZpZGVvIiwiaWF0IjoxNTc4MzE1NjkyLCJleHAiOjE1Nzg0MDIwOTIsImF6cCI6IlBTM1F1MnZjcUVIeDV5a2Q0UWZweTFKWEZnMjNOSU5KIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.oVWJGJQkZ9s6gJKVeWjGupulHTLl4SZ2hXtOfc2jq21rHrDZDpKkERlHT8zdUcbigTRvJoWnskfuJrvxXKbnWdrkHT0dTjQ8Ru4fBt_ip1m7Dqh7JTxXx0Vxp8B_tH5GOLa_wkSrukFg6w0iXHJhg_jjYcqQjE2MsDaNOlj_Q2Q9DJsLUyp5mBEAOvz05g7DtoUui0wmvrzmsc4JLLPHqrtyifXnINoRTH5LMot9RaruUfCPQHz_xXQECw4XXeqgmTUXbBtnL5_giHxzMKLNQOX3mRsVUbAgHeIH_vouOA1enbN3-Yxinf62hhmU89X0W4akg5WlFMpqHcXhTW3NWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Regina Daniels\",\n\"age\": \"19\",\n\"gender\": \"female\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/movies/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUVkJSVFEwT0RKRU1VRTRSRU5CTlVNNE1UUkRRemN4TlRORk16TXhORU5FTVRjek5UQTJOdyJ9.eyJpc3MiOiJodHRwczovL29ueWlueWUtZXppa2UuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlMTIzOTc5Yjk3ZTI2MGU5OTlmZGQ2OCIsImF1ZCI6InZpZGVvIiwiaWF0IjoxNTc4MzE3MzA3LCJleHAiOjE1Nzg0MDM3MDcsImF6cCI6IlBTM1F1MnZjcUVIeDV5a2Q0UWZweTFKWEZnMjNOSU5KIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.QxaJgjUJ63zykTPXcDh32hPWhgNu3h-0POjl-rgSR8uxl1vHKg3MO5kdzEv2ahzVfoe6sJIRN3prNtJ3k0jsDkeBjtWylJlpUs1SbJY7kjI87vy4EdTcIyWkmyOUEnZqqZloEjpLSQE_dwCJchOdABdvwipY073cwkNjyjTqZ_khxLpED-yL1zq88hdEWWHga_eLdDgo3bN80GGOECt_5D2jNC7x9NLqlDPmpRHBjeBKXlCUjA6Xpqp4Q-YmFweZhAq338rlGiMPUBPy_qijBqgrXH6XHSxnHj7Mre1_0qPInI7pkHULvEhqfrd5k4n1A_WmiEwl8iCgSLoDQxA3uQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Regina Daniels\",\n\"age\": \"19\",\n\"gender\": \"female\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/movies",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUVkJSVFEwT0RKRU1VRTRSRU5CTlVNNE1UUkRRemN4TlRORk16TXhORU5FTVRjek5UQTJOdyJ9.eyJpc3MiOiJodHRwczovL29ueWlueWUtZXppa2UuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlMTIzOTExMWE5YWU1MGU5MjkzNjFiNiIsImF1ZCI6InZpZGVvIiwiaWF0IjoxNTc4MzE2NjQ3LCJleHAiOjE1Nzg0MDMwNDcsImF6cCI6IlBTM1F1MnZjcUVIeDV5a2Q0UWZweTFKWEZnMjNOSU5KIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.M0NvSXTetUsyxem8xOF69SUKuK0kTvDgUjO2LyA6mNGHWdbt1LqS8r3UuZdp0p3iZHjRTgrPnQ1p5pXw6emW1N0OajlOC30g2GpStuFXl_gPkLt0iZPRS5h0SRD8whiPNTCrwizDAH1BkZ9yRRCUkiKITP2EHOnIGNq2hh2iWS03f8SX0NxzHe4ditixJVf0xSXC9oo-8WeryGoBT91Wb6eE_MaPz0qxxGYhFt_XrPzoiVIlI7LjCSXyH-vbOhWq9O0iNBzDAyAG2Advg_Ux4XKF6dOUZPcLcxTP_qtxz1znHZALpNMjYQDqQqiRnHrBP9yqBBQRarVTX6NWnjLFFQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Regina Daniels\",\n\"age\": \"19\",\n\"gender\": \"female\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/movies/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUVkJSVFEwT0RKRU1VRTRSRU5CTlVNNE1UUkRRemN4TlRORk16TXhORU5FTVRjek5UQTJOdyJ9.eyJpc3MiOiJodHRwczovL29ueWlueWUtZXppa2UuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlMTIzOTc5Yjk3ZTI2MGU5OTlmZGQ2OCIsImF1ZCI6InZpZGVvIiwiaWF0IjoxNTc4MzE3MzA3LCJleHAiOjE1Nzg0MDM3MDcsImF6cCI6IlBTM1F1MnZjcUVIeDV5a2Q0UWZweTFKWEZnMjNOSU5KIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZGVsZXRlOm1vdmllcyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.QxaJgjUJ63zykTPXcDh32hPWhgNu3h-0POjl-rgSR8uxl1vHKg3MO5kdzEv2ahzVfoe6sJIRN3prNtJ3k0jsDkeBjtWylJlpUs1SbJY7kjI87vy4EdTcIyWkmyOUEnZqqZloEjpLSQE_dwCJchOdABdvwipY073cwkNjyjTqZ_khxLpED-yL1zq88hdEWWHga_eLdDgo3bN80GGOECt_5D2jNC7x9NLqlDPmpRHBjeBKXlCUjA6Xpqp4Q-YmFweZhAq338rlGiMPUBPy_qijBqgrXH6XHSxnHj7Mre1_0qPInI7pkHULvEhqfrd5k4n1A_WmiEwl8iCgSLoDQxA3uQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Regina Daniels\",\n\"age\": \"19\",\n\"gender\": \"female\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/movies/5",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"movies",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post actor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUVkJSVFEwT0RKRU1VRTRSRU5CTlVNNE1UUkRRemN4TlRORk16TXhORU5FTVRjek5UQTJOdyJ9.eyJpc3MiOiJodHRwczovL29ueWlueWUtZXppa2UuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlMTIzOTExMWE5YWU1MGU5MjkzNjFiNiIsImF1ZCI6InZpZGVvIiwiaWF0IjoxNTc4MzE2NjQ3LCJleHAiOjE1Nzg0MDMwNDcsImF6cCI6IlBTM1F1MnZjcUVIeDV5a2Q0UWZweTFKWEZnMjNOSU5KIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.M0NvSXTetUsyxem8xOF69SUKuK0kTvDgUjO2LyA6mNGHWdbt1LqS8r3UuZdp0p3iZHjRTgrPnQ1p5pXw6emW1N0OajlOC30g2GpStuFXl_gPkLt0iZPRS5h0SRD8whiPNTCrwizDAH1BkZ9yRRCUkiKITP2EHOnIGNq2hh2iWS03f8SX0NxzHe4ditixJVf0xSXC9oo-8WeryGoBT91Wb6eE_MaPz0qxxGYhFt_XrPzoiVIlI7LjCSXyH-vbOhWq9O0iNBzDAyAG2Advg_Ux4XKF6dOUZPcLcxTP_qtxz1znHZALpNMjYQDqQqiRnHrBP9yqBBQRarVTX6NWnjLFFQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Regina Daniels\",\n\"age\": \"19\",\n\"gender\": \"female\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/actors",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get actors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUVkJSVFEwT0RKRU1VRTRSRU5CTlVNNE1UUkRRemN4TlRORk16TXhORU5FTVRjek5UQTJOdyJ9.eyJpc3MiOiJodHRwczovL29ueWlueWUtZXppa2UuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlMTIzODc0OTMxYzQ0MGVhYWZhMWQ1ZiIsImF1ZCI6InZpZGVvIiwiaWF0IjoxNTc4MzE1NjkyLCJleHAiOjE1Nzg0MDIwOTIsImF6cCI6IlBTM1F1MnZjcUVIeDV5a2Q0UWZweTFKWEZnMjNOSU5KIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.oVWJGJQkZ9s6gJKVeWjGupulHTLl4SZ2hXtOfc2jq21rHrDZDpKkERlHT8zdUcbigTRvJoWnskfuJrvxXKbnWdrkHT0dTjQ8Ru4fBt_ip1m7Dqh7JTxXx0Vxp8B_tH5GOLa_wkSrukFg6w0iXHJhg_jjYcqQjE2MsDaNOlj_Q2Q9DJsLUyp5mBEAOvz05g7DtoUui0wmvrzmsc4JLLPHqrtyifXnINoRTH5LMot9RaruUfCPQHz_xXQECw4XXeqgmTUXbBtnL5_giHxzMKLNQOX3mRsVUbAgHeIH_vouOA1enbN3-Yxinf62hhmU89X0W4akg5WlFMpqHcXhTW3NWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Regina Daniels\",\n\"age\": \"19\",\n\"gender\": \"female\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/actors",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single actor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUVkJSVFEwT0RKRU1VRTRSRU5CTlVNNE1UUkRRemN4TlRORk16TXhORU5FTVRjek5UQTJOdyJ9.eyJpc3MiOiJodHRwczovL29ueWlueWUtZXppa2UuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlMTIzODc0OTMxYzQ0MGVhYWZhMWQ1ZiIsImF1ZCI6InZpZGVvIiwiaWF0IjoxNTc4MzE1NjkyLCJleHAiOjE1Nzg0MDIwOTIsImF6cCI6IlBTM1F1MnZjcUVIeDV5a2Q0UWZweTFKWEZnMjNOSU5KIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyJdfQ.oVWJGJQkZ9s6gJKVeWjGupulHTLl4SZ2hXtOfc2jq21rHrDZDpKkERlHT8zdUcbigTRvJoWnskfuJrvxXKbnWdrkHT0dTjQ8Ru4fBt_ip1m7Dqh7JTxXx0Vxp8B_tH5GOLa_wkSrukFg6w0iXHJhg_jjYcqQjE2MsDaNOlj_Q2Q9DJsLUyp5mBEAOvz05g7DtoUui0wmvrzmsc4JLLPHqrtyifXnINoRTH5LMot9RaruUfCPQHz_xXQECw4XXeqgmTUXbBtnL5_giHxzMKLNQOX3mRsVUbAgHeIH_vouOA1enbN3-Yxinf62hhmU89X0W4akg5WlFMpqHcXhTW3NWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Regina Daniels\",\n\"age\": \"19\",\n\"gender\": \"female\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/actors/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"actors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit actor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUVkJSVFEwT0RKRU1VRTRSRU5CTlVNNE1UUkRRemN4TlRORk16TXhORU5FTVRjek5UQTJOdyJ9.eyJpc3MiOiJodHRwczovL29ueWlueWUtZXppa2UuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlMTIzOTExMWE5YWU1MGU5MjkzNjFiNiIsImF1ZCI6InZpZGVvIiwiaWF0IjoxNTc4MzE2NjQ3LCJleHAiOjE1Nzg0MDMwNDcsImF6cCI6IlBTM1F1MnZjcUVIeDV5a2Q0UWZweTFKWEZnMjNOSU5KIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.M0NvSXTetUsyxem8xOF69SUKuK0kTvDgUjO2LyA6mNGHWdbt1LqS8r3UuZdp0p3iZHjRTgrPnQ1p5pXw6emW1N0OajlOC30g2GpStuFXl_gPkLt0iZPRS5h0SRD8whiPNTCrwizDAH1BkZ9yRRCUkiKITP2EHOnIGNq2hh2iWS03f8SX0NxzHe4ditixJVf0xSXC9oo-8WeryGoBT91Wb6eE_MaPz0qxxGYhFt_XrPzoiVIlI7LjCSXyH-vbOhWq9O0iNBzDAyAG2Advg_Ux4XKF6dOUZPcLcxTP_qtxz1znHZALpNMjYQDqQqiRnHrBP9yqBBQRarVTX6NWnjLFFQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Regina Daniels\",\n\"age\": \"19\",\n\"gender\": \"female\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/actors/3",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"actors",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete actor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFUVkJSVFEwT0RKRU1VRTRSRU5CTlVNNE1UUkRRemN4TlRORk16TXhORU5FTVRjek5UQTJOdyJ9.eyJpc3MiOiJodHRwczovL29ueWlueWUtZXppa2UuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlMTIzOTExMWE5YWU1MGU5MjkzNjFiNiIsImF1ZCI6InZpZGVvIiwiaWF0IjoxNTc4MzE2NjQ3LCJleHAiOjE1Nzg0MDMwNDcsImF6cCI6IlBTM1F1MnZjcUVIeDV5a2Q0UWZweTFKWEZnMjNOSU5KIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3JzIiwiZ2V0OmFjdG9ycyIsImdldDptb3ZpZXMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.M0NvSXTetUsyxem8xOF69SUKuK0kTvDgUjO2LyA6mNGHWdbt1LqS8r3UuZdp0p3iZHjRTgrPnQ1p5pXw6emW1N0OajlOC30g2GpStuFXl_gPkLt0iZPRS5h0SRD8whiPNTCrwizDAH1BkZ9yRRCUkiKITP2EHOnIGNq2hh2iWS03f8SX0NxzHe4ditixJVf0xSXC9oo-8WeryGoBT91Wb6eE_MaPz0qxxGYhFt_XrPzoiVIlI7LjCSXyH-vbOhWq9O0iNBzDAyAG2Advg_Ux4XKF6dOUZPcLcxTP_qtxz1znHZALpNMjYQDqQqiRnHrBP9yqBBQRarVTX6NWnjLFFQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Regina Daniels\",\n\"age\": \"19\",\n\"gender\": \"female\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/actors/10",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"actors",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

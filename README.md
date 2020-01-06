@@ -93,4 +93,4 @@ The Casting Agency models a company that is responsible for creating movies and 
 
 
 ## Authors
-#### Julius Ngwu - [Capstone](https://onyinye-capstone.herokuapp.com)
+#### Onyinye Ezike - [Capstone](https://onyinye-capstone.herokuapp.com)
